@@ -48,7 +48,7 @@
 .nav div{
 	width: 150px;
 	height: 80px;
-	background-color: lightcyan;
+	/* background-color: lightcyan; */
 	text-align: center;
 }
 
@@ -61,6 +61,7 @@
 	height: 40px;
 	border: 1px solid black;
 	border-radius: 5px;
+	text-decoration: none;
 }
 
 .nav .nav1{
@@ -79,17 +80,36 @@
 	top: 200px;
 	left: 175px;
 	transform-style: preserve-3d;
-	animation: magicCube 10s linear infinite;
+	/* animation: magicCube 10s linear infinite; */
 }
 
-@keyframes magicCube {
+/* @keyframes magicCube {
 	from{
-		transform: rotateX(0deg) rotateY(45deg) rotateZ(45deg);
+		transform: rotateX(45deg) rotateY(0deg) rotateZ(45deg);
 	}
 	to{
-		transform: rotateX(0deg) rotateY(45deg) rotateZ(45deg);
+		transform: rotateX(45deg) rotateY(0deg) rotateZ(45deg);
+	}
+} */
+
+@keyframes rotateToMovie {
+	from{
+		transform: rotateX(45deg) rotateY(0deg) rotateZ(45deg);
+	}
+	to{
+		transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
 	}
 }
+
+@keyframes rotateToSoftwares {
+	from{
+		transform: rotateX(45deg) rotateY(0deg) rotateZ(45deg);
+	}
+	to{
+		transform: rotateX(0deg) rotateY(90deg) rotateZ(0deg);
+	}
+}
+
 
 
 .front{

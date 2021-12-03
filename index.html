@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <link rel="stylesheet" href="./css/style.css">
+  <script type="text/javascript" src="./js/script.js"></script>
 <title>Matrix</title>
 <head>
     <div class="name">
@@ -10,15 +11,15 @@
 <body>
   <div class="bodymain">
     <div class="nav">
-      <div class="nav1"><a href="">Movies</a></div>
-      <div class="nav2"><a href="">Softwares</a></div>
-      <div class="nav3"><a href="">References</a></div>
+      <div class="nav1"><a onclick="rotateToMovie()">Movies</a></div>
+      <div class="nav2"><a onclick="rotateToSoftwares()">Softwares</a></div>
+      <div class="nav3"><a onclick="rotateToReferences()">References</a></div>
       <div class="nav4"><a href="">Images</a></div>
       <div class="nav5"><a href="">Blogs</a></div>
       <div class="nav6"><a href="">Administrator</a></div>
     </div>
     <div class="monitor">
-      <div class="cube">
+      <div class="cube" id="cube">
         <div class="front"></div>
         <div class="back"></div>
         <div class="left"></div>
@@ -28,5 +29,6 @@
       </div>
     </div>
   </div>
+  <script>loadCube()</script>
 </body>
 </html>
